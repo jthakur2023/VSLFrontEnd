@@ -20,5 +20,7 @@ Ethan: Helping with the cyber aspect and a bit with the comment section
 
 
 Jaishri's Branch: All the development work
+<br>
 Ethan's Branch: Cyber aspect and some code
+<br>
 Joel's Branch: Google Map's API and the wireframes
