@@ -11,6 +11,8 @@ Currently in the works:
 <li>Likes section
 <li>Adding images to the database
 <li>Fixing the UI
+<li>Finding a university API
+<li>Finding a address validator
 
 
 Tasks:
