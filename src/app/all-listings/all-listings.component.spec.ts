@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BoardUserComponent } from './board-user.component';
+import { AllListingsComponent } from './all-listings.component';
 
-describe('BoardUserComponent', () => {
-  let component: BoardUserComponent;
-  let fixture: ComponentFixture<BoardUserComponent>;
+describe('AllListingsComponent', () => {
+  let component: AllListingsComponent;
+  let fixture: ComponentFixture<AllListingsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BoardUserComponent ]
+      declarations: [ AllListingsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BoardUserComponent);
+    fixture = TestBed.createComponent(AllListingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

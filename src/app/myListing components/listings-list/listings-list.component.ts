@@ -5,11 +5,11 @@ import { StorageService } from '../../_services/storage.service';
 
 
 @Component({
-  selector: 'app-tutorials-list',
-  templateUrl: './tutorials-list.component.html',
-  styleUrls: ['./tutorials-list.component.css']
+  selector: 'app-listings-list',
+  templateUrl: './listings-list.component.html',
+  styleUrls: ['./listings-list.component.css']
 })
-export class TutorialsListComponent implements OnInit {
+export class ListingsListComponent implements OnInit {
 
   listings?: Listing[];
   currentListing: Listing = {};

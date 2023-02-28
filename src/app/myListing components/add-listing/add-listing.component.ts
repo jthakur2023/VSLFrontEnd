@@ -5,11 +5,11 @@ import { StorageService } from '../../_services/storage.service';
 
 
 @Component({
-  selector: 'app-add-tutorial',
-  templateUrl: './add-tutorial.component.html',
-  styleUrls: ['./add-tutorial.component.css']
+  selector: 'app-add-listing',
+  templateUrl: './add-listing.component.html',
+  styleUrls: ['./add-listing.component.css']
 })
-export class AddTutorialComponent {
+export class AddListingComponent {
 
   currentUser: any;
 

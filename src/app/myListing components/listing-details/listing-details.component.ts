@@ -4,11 +4,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Listing } from 'src/app/models/Listing.model';
 
 @Component({
-  selector: 'app-tutorial-details',
-  templateUrl: './tutorial-details.component.html',
-  styleUrls: ['./tutorial-details.component.css']
+  selector: 'app-listing-details',
+  templateUrl: './listing-details.component.html',
+  styleUrls: ['./listing-details.component.css']
 })
-export class TutorialDetailsComponent implements OnInit {
+export class ListingDetailsComponent implements OnInit {
 
   @Input() viewMode = false;
 
