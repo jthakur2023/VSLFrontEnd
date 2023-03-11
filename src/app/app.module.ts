@@ -15,6 +15,9 @@ import { ListingsListComponent } from './myListing components/listings-list/list
 
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { AllListingsComponent } from './all-listings/all-listings.component';
+import { AllListingsDetailsComponent } from './all-listings-details/all-listings-details.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { AllListingsComponent } from './all-listings/all-listings.component';
     AddListingComponent,
     ListingDetailsComponent,
     ListingsListComponent,
-    AllListingsComponent
+    AllListingsComponent,
+    AllListingsDetailsComponent,
+    DashboardComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
