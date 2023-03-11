@@ -1,0 +1,29 @@
+<div *ngIf="viewMode">
+    <div *ngIf="currentListing.id">
+      <h4>Listings</h4>
+      <div>
+        <label><strong>Address:</strong></label> {{ currentListing.address }}
+      </div>
+      <div>
+        <label><strong>University:</strong></label>
+        {{ currentListing.university }}
+      </div>
+      <div>
+        <label><strong>Semester:</strong></label>
+        {{ currentListing.semester }}
+      </div>
+      <div>
+        <label><strong>Rent:</strong></label>
+        {{ currentListing.rent }}
+      </div>
+  
+    </div>
+  
+    <div *ngIf="!currentListing">
+      <br />
+      <p>Please click on a Listing...</p>
+    </div>
+  </div>
+  
+  
+  

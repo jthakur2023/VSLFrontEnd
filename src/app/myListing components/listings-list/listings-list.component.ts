@@ -59,7 +59,7 @@ export class ListingsListComponent implements OnInit {
     this.currentIndex = index;
   }
 
-  removeAllTutorials(): void {
+  removeAllListings(): void {
     this.listingService.deleteAll()
       .subscribe({
         next: (res) => {

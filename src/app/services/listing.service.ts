@@ -44,4 +44,7 @@ export class ListingService {
   findByUniversity(university: any): Observable<Listing[]> {
     return this.http.get<Listing[]>(`${baseUrl}?university=${university}`);
   }
+  findBySemester(semester: any): Observable<Listing[]> {
+    return this.http.get<Listing[]>(`${baseUrl}?semester=${semester}`);
+  }
 }

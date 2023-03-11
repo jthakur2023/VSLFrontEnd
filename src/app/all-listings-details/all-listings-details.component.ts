@@ -3,12 +3,13 @@ import { ListingService } from 'src/app/services/listing.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Listing } from 'src/app/models/Listing.model';
 
+
 @Component({
-  selector: 'app-listing-details',
-  templateUrl: './listing-details.component.html',
-  styleUrls: ['./listing-details.component.css']
+  selector: 'app-all-listings-details',
+  templateUrl: './all-listings-details.component.html',
+  styleUrls: ['./all-listings-details.component.css']
 })
-export class ListingDetailsComponent implements OnInit {
+export class AllListingsDetailsComponent {
 
   @Input() viewMode = false;
 
@@ -67,5 +68,6 @@ export class ListingDetailsComponent implements OnInit {
         error: (e) => console.error(e)
       });
   }
+
 
 }

@@ -10,6 +10,7 @@ import { ListingsListComponent } from './myListing components/listings-list/list
 import {  ListingDetailsComponent } from './myListing components/listing-details/listing-details.component';
 import { AddListingComponent } from './myListing components/add-listing/add-listing.component';
 import { AllListingsComponent } from './all-listings/all-listings.component';
+import { CommentsComponent } from './comments/comments.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'listings/:id', component:  ListingDetailsComponent },
   { path: 'add', component: AddListingComponent },
   { path: 'allListings', component: AllListingsComponent },
+  { path: 'comments', component: CommentsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
