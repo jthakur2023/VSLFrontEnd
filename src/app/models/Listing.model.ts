@@ -4,4 +4,8 @@ export class Listing {
   university?: string;
   semester?: string;
   rent?: string;
+  views?: any;
+  image?: string;
+  createdAt?: any;
+  updatedAt?: any;
 }

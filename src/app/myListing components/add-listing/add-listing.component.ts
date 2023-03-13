@@ -13,11 +13,14 @@ export class AddListingComponent {
 
   currentUser: any;
 
+  data = new FormData();
+
   listing: Listing = {
     address: '',
     university: '',
     semester: '',
     rent: '',
+    image: '',
   };
   submitted = false;
 
@@ -33,8 +36,10 @@ export class AddListingComponent {
       university: this.listing.university,
       semester: this.listing.semester,
       rent: this.listing.rent,
-      userid: this.currentUser.id
+      userid: this.currentUser.id,
+      image: this.listing.image,
     };
+    
 
     this.listingService.create(data)
       .subscribe({
@@ -54,6 +59,24 @@ export class AddListingComponent {
       semester: '',
       rent: '',
     };
+  }
+
+  upload(event: any) {
+    const file = event.target.files[0];
+
+    
+    this.data.append('file', file);
+
+
+    this.listingService.fileUpload(this.data)
+      .subscribe({
+        next: (res) => {
+          console.log(res);
+          this.listing.image = res.filename;
+          //this.submitted = true;
+        },
+        error: (e) => console.error(e)
+      });
   }
 
 }

@@ -47,4 +47,8 @@ export class ListingService {
   findBySemester(semester: any): Observable<Listing[]> {
     return this.http.get<Listing[]>(`${baseUrl}?semester=${semester}`);
   }
+
+  fileUpload(data:FormData): Observable<any> {
+    return this.http.post(`${baseUrl}/upload`, data);
+  }
 }
