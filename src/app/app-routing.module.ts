@@ -12,16 +12,22 @@ import { AddListingComponent } from './myListing components/add-listing/add-list
 import { AllListingsComponent } from './all-listings/all-listings.component';
 import { CommentsComponent } from './comments/comments.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppLayoutComponent } from "./layout/app.layout.component";
 
 const routes: Routes = [
+  // {path: '', component: AppLayoutComponent,
+  //               children: [
+  //                 { path: 'allListings', component: AllListingsComponent },
+  //               ]
+  // },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'allListings', component: AllListingsComponent },
   { path: 'listings', component: ListingsListComponent },
   { path: 'listings/:id', component:  ListingDetailsComponent },
   { path: 'add', component: AddListingComponent },
-  { path: 'allListings', component: AllListingsComponent },
   { path: 'comments', component: CommentsComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }

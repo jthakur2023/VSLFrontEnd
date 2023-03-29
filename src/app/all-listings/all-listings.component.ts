@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ListingService } from 'src/app/services/listing.service';
 import { Listing } from 'src/app/models/Listing.model';
 
+
+
 @Component({
   selector: 'app-all-listings',
   templateUrl: './all-listings.component.html',

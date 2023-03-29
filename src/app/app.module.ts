@@ -18,7 +18,13 @@ import { AllListingsComponent } from './all-listings/all-listings.component';
 import { AllListingsDetailsComponent } from './all-listings-details/all-listings-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CommentsComponent } from './comments/comments.component';
-import { IonicModule } from '@ionic/angular';
+import { AppLayoutModule } from './layout/app.layout.module';
+
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { StyleClassModule } from 'primeng/styleclass';
+import { PanelMenuModule } from 'primeng/panelmenu';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +47,12 @@ import { IonicModule } from '@ionic/angular';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    IonicModule.forRoot()
+    AppLayoutModule,
+    TableModule,
+    StyleClassModule,
+    PanelMenuModule,
+    ButtonModule
+  
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
